@@ -40,7 +40,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 // Login dev or test
 const loginUriEnv = process.argv[4] !== undefined ? process.argv[4] : 'test';
-const uriPrefix = `https://myhealth-${loginUriEnv}.co.ihc.com/`;
+const uriPrefix = `https://tam-${loginUriEnv}.org/`;
 const loginUri = `${uriPrefix}pkmslogin.form?token=Unknown`;
 request({
   method: 'POST',
